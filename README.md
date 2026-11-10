@@ -1,36 +1,40 @@
-# Worship Harvest OnCue for Android
+# Worship Harvest OnCue Privacy Policy
 
-Worship Harvest OnCue is a native Android app for organizing and running a worship service. Service plans, notes, and imported audio are stored on the device. Playback works offline after audio has been imported.
+**Effective date: November 9, 2026**
 
-## What it includes
+Worship Harvest OnCue is a service-planning and audio-playback app for iPhone and iPad. This policy explains what information the app handles and what happens when you choose to import an audio file.
 
-- Up to eight services, sorted by date and then service time. Service names, dates, and times can be edited; services can be duplicated or deleted.
-- Reorderable service sections, with controls to add, rename, resize, or delete sections. Song sections support one to four songs; response/ministry sections support one to four songs plus a loop. Song slots use a two-column layout on phones and tablets.
-- Local audio import through Android's document picker, with an edit dialog for labels, replacing audio, and removing audio. If Google Drive is installed and available as a document provider on the device, it appears as a location in that picker. Imported files are copied into the service and remain available offline.
-- Loop and song playback, crossfade/continuous/individual modes, 2/4/6-second fades, a song scrubber, chromatic key pads, and up to 600 characters of service notes.
+## Information stored on your device
 
-Android's built-in media decoder support varies by device. MP3, AAC/M4A, and WAV are common formats; use another format if a particular phone cannot decode a file.
+OnCue stores service names, dates and times, section layouts, playback settings, service notes, and audio files you import in the app’s local storage. This information is used to provide the app’s functions. The app does not require an account. The app does not send your service plans, notes, or locally imported audio to the independent developer or to Worship Harvest.
 
-## Open and run in Android Studio
+Files you select through Apple’s Files picker are accessed to import the selected audio. Imported audio is copied into the relevant service in OnCue so that it can be played without an internet connection. Your device’s operating system may include app data in a device backup according to your backup settings; OnCue does not provide its own cloud sync or transfer service.
 
-1. Install Android Studio Narwhal 3 Feature Drop or newer and unzip this folder.
-2. In Android Studio, choose **Open** and select `WorshipHarvestOnCue-Android`.
-3. Let Android Studio sync the Gradle project. The first setup requires internet to download Gradle and Android build tools.
-4. Connect an Android phone with USB debugging enabled, or select an emulator, and press **Run**.
+You can delete a service and its audio from within the app. Removing OnCue from your device removes its app data, subject to any device backups managed by your operating system.
 
-The app supports Android 8.0 (API 26) and later. The Play build targets API 36. The Play version is configured as version 1.0, build 1. The current application ID is `com.worshipflow.app`; keep it unchanged when uploading updates to the same Play listing.
+## Google Drive imports
 
-## Prepare a Google Play release
+If you paste a Google Drive share link, OnCue sends that link to Google over an internet connection to retrieve the file. The link must allow access without signing in. If you select a file from Google Drive through Files, the file provider handles access to that selected file. Google processes these requests under its own terms and privacy practices.
 
-1. In Google Play Console, create the app using application ID `com.worshipflow.app` if that ID is available to your developer account. Package IDs are unique; if it is already registered, choose an available ID before the first release and update the project before building.
-2. In Android Studio, select **Build → Generate Signed Bundle / APK… → Android App Bundle**.
-3. Create or select an upload key. Keep the keystore file and its passwords in a safe place; they are needed for future updates. Do not put them in this project or upload them to GitHub.
-4. Upload the resulting `.aab` to a Play Console test track first, then complete the store listing, content rating, app access, and Data safety forms.
+OnCue does not ask for your Google password, sign into your Google account, or receive your Google account profile. The retrieved audio is saved in OnCue’s local app storage for playback. Service names, notes, and other audio files are not included in the Drive request.
 
-The app itself has no account, backend, analytics, advertising, or internet permission. It stores service plans and copied audio in app-private storage. Review each Play Console declaration against the final build and your use of Android's system document picker. New personal Play developer accounts may have a required closed-testing step before production access.
+## Data collection, analytics, and advertising
 
-The project includes an in-app privacy policy and a copy at `PrivacyPolicy.md` for publishing as a public webpage. Google Play requires the policy to be linked in Play Console; the draft listing and suggested declarations are in `PlayStoreListing.md`. Replace the policy's contact details only if your support contact changes.
+OnCue does not include advertising or analytics tools, does not track users across apps or websites, and does not collect personal information for the independent developer. The app contains no third-party analytics or advertising SDKs.
 
-## Project identity and compatibility
+## Children
 
-The Android package/application ID remains `com.worshipflow.app` to preserve compatibility with the Android project that has already been tested. The user-facing app name is **Worship Harvest OnCue**. The iOS app has a separate bundle identifier and does not share data with this Android app.
+OnCue does not ask for personal information from children or provide public profiles, messaging, or sharing between users. Service data and imported audio stay within the app on the device.
+
+## Changes to this policy
+
+If this policy changes, the updated version will be published at the same public policy address with a revised effective date.
+
+## Contact
+
+For questions about this policy or OnCue, contact the independent developer:
+
+**Developer:** Paul Mugarura  
+**Support email:** [worshipharvestoncue@gmail.com](mailto:worshipharvestoncue@gmail.com)
+
+Worship Harvest is not the developer, publisher, support provider, or privacy-policy contact for this app.
